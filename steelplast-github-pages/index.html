@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Steelplast — планировщик публикаций</title>
+    <script type="module" crossorigin src="./assets/index-CofZz54J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C-7kkgww.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div class="mark">S</div>
+        <div>
+          <h1>Steelplast</h1>
+          <p class="lead">Планировщик повторных публикаций для вашего профиля VK.</p>
+        </div>
+      </header>
+
+      <section class="notice">
+        <strong>Ключ нигде не сохраняется и не отправляется на Cloudflare.</strong>
+        <span>VK выдаёт временный доступ только внутри открытого мини-приложения.</span>
+      </section>
+
+      <section class="controls">
+        <button id="connect" type="button">Подключить профиль и подобрать записи</button>
+        <button id="shuffle" class="secondary" type="button" hidden>Подобрать другие записи</button>
+      </section>
+      <p id="status" class="status" aria-live="polite">Ожидается подключение.</p>
+
+      <section id="planner" hidden>
+        <div class="section-heading">
+          <div>
+            <h2>План на публикацию</h2>
+            <p id="profile" class="muted"></p>
+          </div>
+          <span class="badge">Москва, UTC+3</span>
+        </div>
+
+        <div id="posts" class="posts"></div>
+
+        <div class="approval">
+          <label class="check-row">
+            <input id="approve" type="checkbox" />
+            <span>Я проверил тексты, фотографии, их порядок и время публикации.</span>
+          </label>
+          <button id="schedule" class="danger" type="button" disabled>
+            Запланировать 3 записи и удалить исходники
+          </button>
+          <p class="warning">
+            Сначала приложение создаст и проверит все три отложенные записи. Исходники будут удалены только после успешной проверки.
+          </p>
+        </div>
+      </section>
+
+      <section id="result" class="result" hidden></section>
+    </main>
+  </body>
+</html>
