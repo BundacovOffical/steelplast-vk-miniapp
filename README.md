@@ -1,0 +1,1 @@
+# steelplast-vk-miniapp
