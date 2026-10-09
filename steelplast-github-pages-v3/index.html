@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light" />
     <title>Steelplast — планировщик публикаций</title>
-    <script type="module" crossorigin src="./assets/index-BOjLaJg8.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CK0WatAl.css">
+    <script type="module" crossorigin src="./assets/index-BTrW-v-C.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CDcW2BLX.css">
   </head>
   <body>
     <main class="app-shell">
@@ -14,13 +14,13 @@
         <div class="mark">S</div>
         <div>
           <h1>Steelplast</h1>
-          <p class="lead">Планировщик повторных публикаций для вашего профиля VK.</p>
+          <p class="lead">Подбор старых записей для повторной публикации · v4 со ссылками.</p>
         </div>
       </header>
 
       <section class="notice">
-        <strong>Ключ доступа хранится только в памяти открытой вкладки.</strong>
-        <span>VK выдаёт временный доступ только внутри открытого мини-приложения.</span>
+        <strong>Ручная публикация: приложение только читает архив и подбирает записи.</strong>
+        <span>Откройте исходники по ссылкам в карточках и запланируйте копии в VK. Приложение ничего не публикует и не удаляет. Ключ доступа хранится только в памяти открытой вкладки.</span>
       </section>
 
       <section class="controls">
@@ -45,7 +45,7 @@
           <label>Исходные записи с даты <input id="date-from" type="date" /></label>
           <label>По дату включительно <input id="date-to" type="date" /></label>
         </div>
-        <p class="muted help">Это даты старых записей. Время новых публикаций задаётся ниже. Записи вне выбранного периода не попадут в подбор.</p>
+        <p class="muted help">Это даты старых записей. Рекомендуемое время новых публикаций показано ниже; его нужно назначить вручную в VK. Записи вне выбранного периода не попадут в подбор.</p>
         <details>
           <summary>Темы для подбора</summary>
           <div class="topic-actions"><button id="all-topics" class="secondary" type="button">Все темы</button><button id="no-topics" class="secondary" type="button">Снять выбор</button></div>
@@ -73,17 +73,8 @@
         <div id="posts" class="posts"></div>
 
         <div class="approval">
-          <label class="check-row">
-            <input id="approve" type="checkbox" />
-            <span>Я проверил тексты, фотографии, их порядок и время публикации.</span>
-          </label>
-          <button id="schedule" class="danger" type="button" disabled>
-            Запланировать 3 записи и удалить исходники
-          </button>
-          <p class="warning">
-            Сначала приложение создаст и проверит все три отложенные записи. Исходники будут удалены только после успешной проверки.
-            Лайки и комментарии исходников в новые записи не переносятся.
-          </p>
+          <strong>Дальше — в самом VK</strong>
+          <p class="warning">Откройте каждый исходный пост по ссылке, скопируйте текст и фотографии в том же порядке и создайте отложенную запись. Дату и время назначьте в VK: поля выше — только подсказка, а не отложенная публикация. Исходник удаляйте вручную только после проверки копии. Лайки и комментарии не переносятся.</p>
         </div>
       </section>
 
